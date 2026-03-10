@@ -17,7 +17,7 @@ postForm.addEventListener('submit', (e) => {
     let posts = JSON.parse(localStorage.getItem('myBlogPosts')) || [];
 
     
-    posts.unshift(newPost);
+    posts.post(newPost);
 
     
     localStorage.setItem('myBlogPosts', JSON.stringify(posts));
