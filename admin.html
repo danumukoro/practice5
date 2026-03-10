@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Admin | Create Post</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>New Blog Post</h1>
+            <a href="index.html" class="back-link">← View Public Site</a>
+        </header>
+
+        <form class="post-form">
+            <div class="form-group">
+                <label for="title">Post Title</label>
+                <input type="text" id="title" placeholder="e.g., My Morning Routine" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Publish Date</label>
+                <input type="date" id="date" value="2026-03-07">
+            </div>
+
+            <div class="form-group">
+                <label for="content">Story Content</label>
+                <textarea id="content" rows="12" placeholder="Start writing your story here..."></textarea>
+            </div>
+
+            <div class="actions">
+                <button type="button" class="btn-secondary">Save Draft</button>
+                <button type="submit" class="btn-primary">Publish to Blog</button>
+            </div>
+        </form>
+    </div>
+<script src="admin.js"></script>
+</body>
+</html>

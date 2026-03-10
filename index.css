@@ -1,1 +1,134 @@
+/* 1. Setup & Variables */
+:root {
+    --primary-color: #222;
+    --text-muted: #666;
+    --accent: #007bff;
+    --spacing: 2rem;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--primary-color);
+    background: #fff;
+    padding-top: 60px; /* Offset for sticky nav */
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. Navigation */
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { font-weight: 800; font-size: 1.2rem; text-decoration: none; color: #000; }
+.admin-link { font-size: 0.8rem; text-decoration: none; color: var(--text-muted); border: 1px solid #eee; padding: 5px 10px; border-radius: 4px; }
+
+/* 3. Header & Posts */
+.blog-header {
+    text-align: center;
+    padding: 80px 0 40px;
+}
+
+.blog-header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+.blog-header p { color: var(--text-muted); }
+
+.post-entry {
+    margin-bottom: 60px;
+}
+
+time {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.post-entry h2 a {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.post-entry h2 a:hover { color: var(--accent); }
+
+.post-entry p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* 4. Footer */
+.site-footer {
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+    color: #888;
+    font-style: italic;
+    border: 2px dashed #eee;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.delete-btn {
+    background: transparent;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background: #ff4d4d;
+    color: white;
+}
