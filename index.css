@@ -132,3 +132,15 @@ time {
     background: #ff4d4d;
     color: white;
 }
+
+time {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--accent); /* Uses your blue accent color */
+    background: #f0f7ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
